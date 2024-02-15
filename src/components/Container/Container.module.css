@@ -1,0 +1,12 @@
+.container {
+  background: linear-gradient(#e9470d, #f48320);
+  box-shadow: 4px 10px 10px -2px #4a4949;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 70%;
+  padding: 24px 63px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,23 @@
+.card {
+  background: #aba8a8;
+  box-shadow: 0px 4px 4px #353434;
+  border-radius: 10px;
+  padding: 22px 26px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goalName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
