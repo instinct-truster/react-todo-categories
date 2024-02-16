@@ -1,2 +1,19 @@
 .actionButton {
+  background: linear-gradient(#e9470d, #f48320);
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  position: relative;
+}
+
+.actionButton:hover {
+  border: 2px solid white;
+}
+
+.actionButton img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
