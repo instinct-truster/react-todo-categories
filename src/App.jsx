@@ -1,6 +1,12 @@
-import { Container, Title, Typography, GoalList } from "./components";
-import Card from "./components/Card/Card";
-import ProgressBar from "./components/ProgressBar/ProgressBar";
+import {
+  Container,
+  Title,
+  Typography,
+  GoalList,
+  Card,
+  Form,
+  ProgressBar,
+} from "./components";
 
 function App() {
   return (
@@ -10,14 +16,18 @@ function App() {
         <Typography fontSize={24} bold marginTop={"36px"} marginBottom={"17px"}>
           List of Goals
         </Typography>
-        <Container flex>
+
+        <Container flexrow>
           <GoalList />
-          <Card col>
-            <Typography fontSize={24} bold>
-              List of Goals
-            </Typography>
-            <ProgressBar progress={"60%"} />
-          </Card>
+          <Container flexcol>
+            <Card col>
+              <Typography fontSize={24} bold>
+                List of Goals
+              </Typography>
+              <ProgressBar progress={"60%"} />
+            </Card>
+            <Form />
+          </Container>
         </Container>
       </Container>
     </>

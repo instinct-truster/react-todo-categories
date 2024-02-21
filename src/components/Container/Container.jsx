@@ -1,9 +1,16 @@
 import React from "react";
 import styles from "./Container.module.css";
 
-function Container({ children, flex }) {
+function Container({ children, flexrow, flexcol }) {
   return (
-    <div className={flex ? styles.flexContainer : styles.container}>
+    <div
+      className={
+        flexrow
+          ? styles.flexContainer
+          : flexcol
+          ? styles.flexColContainer
+          : styles.container
+      }>
       {children}
     </div>
   );
