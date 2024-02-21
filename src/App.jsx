@@ -22,7 +22,7 @@ function App() {
           <Container flexcol>
             <Card col>
               <Typography fontSize={24} bold>
-                List of Goals
+                Goal Progress
               </Typography>
               <ProgressBar progress={"60%"} />
             </Card>

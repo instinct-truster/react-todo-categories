@@ -1,11 +1,13 @@
 .active {
   height: 36px;
   width: 36px;
-  border: 1px solid #efeaea;
+  border-radius: 50%;
+  border: none;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   transition: all 0.4s;
 }
 
