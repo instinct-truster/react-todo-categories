@@ -15,9 +15,13 @@
   width: 100%;
   outline: none;
   padding: 0 10px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .inputContainer {
   width: 100%;
+}
+
+.titleContainer {
+  margin-left: 8px;
 }
