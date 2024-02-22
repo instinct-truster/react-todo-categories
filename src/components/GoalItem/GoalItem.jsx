@@ -5,12 +5,12 @@ import styles from "./GoalItem.module.css";
 import editIcon from "../../assets/icons/edit.svg";
 import trashIcon from "../../assets/icons/trash.svg";
 
-function GoalItem() {
+function GoalItem(goal) {
   return (
     <>
       <div className={styles.goalName}>
-        <Checkbox />
-        <Typography fontSize={24}>Do the dishes.</Typography>
+        <Checkbox goal={goal} />
+        <Typography fontSize={24}>{goal.name}</Typography>
       </div>
       <div className={styles.actionButtons}>
         <ActionButton icon={editIcon} handleClick={() => null} />

@@ -7,14 +7,18 @@ import {
   Form,
   ProgressBar,
 } from "./components";
+import CategoriesList from "./components/CategoriesList/CategoriesList";
+import { useSelector } from "react-redux";
 
 function App() {
+  const { category } = useSelector((state) => state.goals);
   return (
     <>
       <Container>
         <Title />
         <Typography fontSize={24} bold marginTop={"36px"} marginBottom={"17px"}>
-          List of Goals
+          List of{" "}
+          <span style={{ textTransform: "capitalize" }}>{category}</span> Goals
         </Typography>
 
         <Container flexrow>
@@ -29,6 +33,7 @@ function App() {
             <Form />
           </Container>
         </Container>
+        <CategoriesList />
       </Container>
     </>
   );

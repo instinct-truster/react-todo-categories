@@ -5,10 +5,12 @@
   width: 38px;
   cursor: pointer;
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 
 .actionButton:hover {
   border: 2px solid white;
+  transform: translateY(-5px);
 }
 
 .actionButton img {

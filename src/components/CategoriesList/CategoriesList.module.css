@@ -1,0 +1,29 @@
+.categoriesList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.categoriesList div {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.categoriesList p {
+  color: white;
+  font-size: 24px;
+}
+
+.categoriesList img {
+  height: 48px;
+  width: 48px;
+}
+
+.categoriesList div:hover {
+  transform: translateY(-5px);
+}
